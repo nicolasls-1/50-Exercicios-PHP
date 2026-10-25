@@ -1,0 +1,32 @@
+<?php
+/******************************************************************************
+Curso: Tecnologia em Análise e Desenvolvimento de Sistemas
+Disciplina: Linguagem e Técnicas de Programação
+Professor: Flores
+Turma: ADS2B
+Componentes:
+ 26006629-2  - Nicolas da Silva Lima
+ 26011605-2 - Bernardo Rodrigues
+ 26013884-2 - Gabriel Rafhael Cavalcante
+ 26011899-2 - Gabriel Ruiz
+ 26009508-2 - Matheus Eduardo
+Data: 01 de novembro de 2026
+Descritivo:   15.FOR/IF: Crie um programa para encontrar e imprimir todos os números primos entre 1 e 50
+*******************************************************************************/
+for ($i = 2; $i <= 50; $i++) {
+    $primo = true;
+    
+    for ($j = 2; $j < $i; $j++) {
+        if ($i % $j == 0) {
+            $primo = false;
+            break;
+        }
+    }
+
+    if ($primo) {
+        echo "Número primo: $i\n";
+    }
+}
+
+// o sistema encontra e imprime os primos de 1 a 50
+?>
